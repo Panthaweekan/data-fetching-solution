@@ -1,9 +1,9 @@
-import ServerComponent from "@components/serverFetch";
-import ClientUseEffect from "@components/clientUseEffect";
-import ClientGlobalStore from "@components/clientGlobalStore";
-import ClientGlobalStoreUpdate from "@components/clientGlobalStoreUpdate";
-import ClientReactQuery from "@components/clientReactQuery/page";
-import ClientReactQueryTwo from "@components/clientReactQueryTwo/page";
+import ServerComponent from "@components/t1_serverComponent";
+import ClientUseEffect from "@components/t2_clientUseEffect";
+import ClientGlobalStore from "@components/t3_clientGlobalStore";
+import ClientGlobalStoreUpdate from "@components/t4_clientGlobalStoreUpdate";
+import ClientReactQuery from "@components/t5_clientReactQuery";
+import ClientReactQueryTwo from "@components/t6_clientReactQueryTwo";
 
 export default function Home() {
   return (

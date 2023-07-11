@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import DisplayPost from "@components/utils/displayTime";
 import { type Time } from "@components/utils/types";
-import usePostStore from "@components/utils/postStore";
+import useStore from "@components/utils/store";
 
 async function getPosts() {
   console.log("This is fetching data from ClientGlobalStore.");
@@ -13,7 +13,7 @@ async function getPosts() {
 }
 
 const ClientGlobalStore = () => {
-  const [data, setData] = usePostStore((state) => [state.time, state.setTime]);
+  const [data, setData] = useStore((state) => [state.time, state.setTime]);
 
   useEffect(() => {
     getPosts().then((data) => setData(data));

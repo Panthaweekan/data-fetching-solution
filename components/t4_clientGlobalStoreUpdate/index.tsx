@@ -1,9 +1,9 @@
 "use client";
 
 import DisplayPost from "@components/utils/displayTime";
-import usePostStore from "@components/utils/postStore";
+import useStore from "@components/utils/store";
 const ClientGlobalStoreUpdate = () => {
-  const [data, setData] = usePostStore((state) => [state.time, state.setTime]);
+  const [data, setData] = useStore((state) => [state.time, state.setTime]);
 
   return (
     <>

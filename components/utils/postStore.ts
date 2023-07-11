@@ -1,14 +1,14 @@
 import { create } from "zustand";
-import { type Post } from "./types";
+import { type Time } from "./types";
 
 interface PostStore {
-  posts: Post[];
-  setPosts: (posts: Post[]) => void;
+  time: Time | null;
+  setTime: (time: Time) => void;
 }
 
 const usePostStore = create<PostStore>((set) => ({
-  posts: [],
-  setPosts: (posts) => set({ posts }),
+  time: null,
+  setTime: (time) => set({ time }),
 }));
 
 export default usePostStore;

@@ -4,10 +4,10 @@ import { useEffect } from "react";
 import DisplayPost from "@components/utils/displayTime";
 import { type Time } from "@components/utils/types";
 import useStore from "@components/utils/store";
-
+import { API_URL } from "utils";
 async function getPosts() {
   console.log("This is fetching data from ClientGlobalStore.");
-  const res = await fetch("http://localhost:3001");
+  const res = await fetch(API_URL);
   const data = (await res.json()) as Time;
   return data;
 }

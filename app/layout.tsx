@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import ReactQueryProvider from "@components/utils/reactQueryProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,11 +19,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex gap-2 mb-4">
           <Link href="/">Home</Link>
-          <Link href="/another">another</Link>
         </div>
-        <ReactQueryProvider>
-          <div className="m-4">{children}</div>
-        </ReactQueryProvider>
+        <div className="m-4">{children}</div>
       </body>
     </html>
   );

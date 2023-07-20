@@ -1,9 +1,10 @@
 import ServerComponent from "@components/t1_serverComponent";
-import ClientUseEffect from "@components/t2_clientUseEffect";
-import ClientGlobalStore from "@components/t3_clientGlobalStore";
-import ClientGlobalStoreUpdate from "@components/t4_clientGlobalStoreUpdate";
-import ClientReactQuery from "@components/t5_clientReactQuery";
-import ClientReactQueryTwo from "@components/t6_clientReactQueryTwo";
+import ClientUseEffectOne from "@components/t2_clientUseEffectOne";
+import ClientUseEffectTwo from "@components/t3_clientUseEffectTwo";
+import ClientGlobalStore from "@components/t4_clientGlobalStore";
+import ClientGlobalStoreUpdate from "@components/t5_clientGlobalStoreUpdate";
+import ClientReactQuery from "@components/t6_clientReactQuery";
+import ClientReactQueryTwo from "@components/t7_clientReactQueryTwo";
 
 export default function Home() {
   return (
@@ -14,8 +15,12 @@ export default function Home() {
       </div>
 
       <div>
-        <div className="font-bold">UseEffect Fetch</div>
-        <ClientUseEffect />
+        <div className="font-bold">UseEffect Fetch (1)</div>
+        <ClientUseEffectOne />
+      </div>
+      <div>
+        <div className="font-bold">UseEffect Fetch (2)</div>
+        <ClientUseEffectTwo />
       </div>
 
       <div>

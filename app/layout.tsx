@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import ReactQueryProvider from "@components/utils/reactQueryProvider";
+import GlobalStoreWrapper from "@components/utils/GlobalStoreWrapper";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,7 +24,9 @@ export default function RootLayout({
           <Link href="/another">another</Link>
         </div>
         <ReactQueryProvider>
-          <div className="m-4">{children}</div>
+          <GlobalStoreWrapper>
+            <div className="m-4">{children}</div>
+          </GlobalStoreWrapper>
         </ReactQueryProvider>
       </body>
     </html>

@@ -5,7 +5,6 @@ import ClientGlobalStore from "@components/t4_clientGlobalStore";
 import ClientGlobalStoreUpdate from "@components/t5_clientGlobalStoreUpdate";
 import ClientReactQuery from "@components/t6_clientReactQuery";
 import ClientReactQueryTwo from "@components/t7_clientReactQueryTwo";
-
 export default function Home() {
   return (
     <div className="flex flex-col items-start gap-4">
